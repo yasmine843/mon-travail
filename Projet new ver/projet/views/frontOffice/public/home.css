@@ -1,0 +1,321 @@
+body {
+  font-family: Segeo UI, Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: #87bcfb;
+  color: #333;
+}
+
+header {
+  background-color: #1279f1;
+  text-align: center;
+  padding: 2rem 0 0 0;
+  border: 10px solid #28c2f7;
+  border-radius: 8px;
+}
+
+nav {
+  background-color: #2c3e50;
+  padding: 1rem 0;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+nav ul li a:hover {
+  color: #28d1f7;
+  border: 2px solid #28f7ef;
+  border-radius: 8px;
+}
+
+/* Sections */
+.section {
+  display: none; /* Cacher toutes les sections par défaut */
+  background-color: #fff;
+  padding: 3rem 2rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* R-red G-Green B-Blue A-Alpha(Opacity)*/
+  border-radius: 8px;
+}
+
+.section.active {
+  display: block; /* Afficher uniquement la section active */
+}
+
+.section h2 {
+  color: #3498db;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Liste des cours */
+.courses-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les cours */
+}
+
+.course-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  transform: scale(1.05); /* Agrandir légèrement au survol */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.course-card h3 {
+  font-size: 18px;
+  margin: 12px 0;
+}
+
+.course-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.course-card button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.course-card button:hover {
+  background-color: #0056b3;
+}
+
+/* Bouton de thème */
+#toggle-theme {
+  position: fixed;
+  top: 22px;
+  right: 23px;
+  padding: 5px 10px;
+  background-color: #2c3e50;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 2.3s ease;
+}
+
+#toggle-theme:hover {
+  background-color: #3498db;
+}
+
+/* Formulaire de contact */
+#contact-form button {
+  background-color: #3498db;
+  color: #333;
+  border-radius: 4px;
+  width: 200px;
+}
+
+#contact-form button:hover {
+  background-color: #2980b9;
+}
+
+#contact-form input, #contact-form textarea {
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Panier */
+#cart-details {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 350px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+#cart-details h3 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#cart-items li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Champ de texte */
+#card-number {
+  width: 90%;
+  padding: 12px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+#card-number:focus {
+  border-color: #007bff;
+  outline: none;
+}
+/**********************************/
+*/
+/*box de cours*/
+
+/* Tableau avec bordure */
+.courses-table {
+  width: 60%;  /* Largeur du tableau */
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 1px solid #4e6acf;  /* Bordure simple */
+}
+
+/* En-têtes du tableau */
+.courses-table th {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  text-align: left;
+}
+
+
+.courses-table td {
+  padding: 10px;
+  border: 1px solid #6c6cc1;
+  text-align: left;
+}
+
+
+.courses-table tr:hover {
+  background-color: #5ebdd4;
+}
+
+#formContainer {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+}
+
+.hidden {
+  display: none;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/*tableau yasmine css*/
+
+
+/* Style de la table */
+/* Style de la table avec une touche bleue */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fc; /* Fond clair */
+  margin: 0;
+  padding: 0;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 30px auto;
+  font-size: 16px;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 15px;
+  border: 1px solid #dde5f2; /* Bordure légère */
+}
+
+.styled-table thead {
+  background-color: #007bff; /* Bleu vibrant */
+  color: #fff;
+}
+
+.styled-table tbody tr:nth-child(even) {
+  background-color: #f0f8ff; /* Légère teinte bleue */
+}
+
+.styled-table tbody tr:hover {
+  background-color: #e0f7ff; /* Survol plus clair */
+  cursor: pointer;
+}
+
+.styled-table td {
+  text-align: center;
+}
+
+.styled-table th {
+  text-align: center;
+}
+
+/* Style pour le texte */
+h1, h2 {
+  color: #0056b3; /* Bleu foncé */
+}
